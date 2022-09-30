@@ -7,7 +7,7 @@ const seed = random.getRandomSeed();
 // const seed = '10396'; // restore look from filename
 
 const settings = {
-  dimensions: [ 2048, 2048 ],
+  dimensions: [ 1080, 1080 ],
   animate: true,
   name: seed,
 };
@@ -46,7 +46,7 @@ const sketch = ({ context, width, height }) => {
     context.save();
 
     context.translate(mask.x, mask.y);
-    context.lineWidth = 100;
+    context.lineWidth = 40;
 
     drawPolygon({
       context,
